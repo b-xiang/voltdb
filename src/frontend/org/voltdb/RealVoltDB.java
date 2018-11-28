@@ -1593,7 +1593,7 @@ public class RealVoltDB implements VoltDBInterface, RestoreAgent.Callback, HostM
             // Start elastic join service
             try {
                 if (m_config.m_isEnterprise) {
-                    Class<?> elasticServiceClass = MiscUtils.loadProClass("org.voltdb.join.ElasticJoinCoordinator",
+                    Class<?> elasticServiceClass = MiscUtils.loadProClass("org.voltdb.join.ElasticCoordinator",
                                                                           "Elastic join", false);
 
                     if (elasticServiceClass == null) {
